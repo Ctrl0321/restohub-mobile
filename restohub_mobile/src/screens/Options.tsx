@@ -13,7 +13,7 @@ const Home = ({navigation}:OptionsProps) => {
     <TouchableOpacity style={style.optionButton} onPress={()=>navigation.navigate("AddEmployee")}>
       <Text style={style.buttonText}>Add Employee</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={style.optionButton}>
+    <TouchableOpacity style={style.optionButton} onPress={()=>navigation.navigate("Employees")}>
       <Text style={style.buttonText}>View All Employees</Text>
     </TouchableOpacity>
     </View>
