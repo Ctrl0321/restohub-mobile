@@ -10,7 +10,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { RootStackParamList } from './App';
+import { RootStackParamList } from '../../App';
 
 type HomeProps=NativeStackScreenProps<RootStackParamList,'Home'>
 
@@ -20,12 +20,12 @@ function AppPro({navigation}:HomeProps): JSX.Element {
     <>
       <ImageBackground
         style={styles.Image}
-        source={require('./assets/images/sport.jpg')}>
+        source={require('../../assets/images/sport.jpg')}>
         <Image
-          source={require('./assets/images/Gearup.png')}
+          source={require('../../assets/images/Gearup.png')}
           style={styles.headText}
         />
-        <TouchableOpacity style={styles.letsgo_btn} onPress={() => {navigation.navigate("Profile",{profileId:"69"})}}>
+        <TouchableOpacity style={styles.letsgo_btn} onPress={() => {navigation.navigate("Options")}}>
           <Text style={styles.letsgo_text}>Let's Go</Text>
         </TouchableOpacity>
       </ImageBackground>
