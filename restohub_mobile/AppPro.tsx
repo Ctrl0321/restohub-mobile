@@ -9,8 +9,12 @@ import {
   Button,
   TouchableOpacity,
 } from 'react-native';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { RootStackParamList } from './App';
 
-function AppPro(): JSX.Element {
+type HomeProps=NativeStackScreenProps<RootStackParamList,'Home'>
+
+function AppPro({navigation}:HomeProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <>
@@ -21,7 +25,7 @@ function AppPro(): JSX.Element {
           source={require('./assets/images/Gearup.png')}
           style={styles.headText}
         />
-        <TouchableOpacity style={styles.letsgo_btn} onPress={() => {}}>
+        <TouchableOpacity style={styles.letsgo_btn} onPress={() => {navigation.navigate("Profile",{profileId:"69"})}}>
           <Text style={styles.letsgo_text}>Let's Go</Text>
         </TouchableOpacity>
       </ImageBackground>
