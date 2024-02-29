@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "671686359120",
+    "project_id": "restohub-mobile",
+    "storage_bucket": "restohub-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671686359120:android:4a422723e773bdfd4c3955",
+        "android_client_info": {
+          "package_name": "com.restohub_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ-q-QiGM5icf6sE21y963SrQpIJfV1CA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
